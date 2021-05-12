@@ -1,7 +1,6 @@
 import StudentData from '../models/student.js';
 
 export const getStudents = async (req, res)=> {
-
   try {
     const allStudents = await StudentData.find(); // finds student in allStudents variable
 
