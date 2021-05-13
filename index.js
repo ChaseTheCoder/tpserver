@@ -7,8 +7,8 @@ import studentRoutes from './routes/student.js';
 const app = express();  // it's an object, oop, copy of express
 
 app.use('/students', studentRoutes);
-app.use(bodyParser.json({limit: "20mb", extended: true})); //limit of 20mp picture, extended true means it will only accept strings
-app.use(bodyParser.urlencoded({limit: "20mb", extended: true}));
+app.use(express.json({limit: "20mb", extended: true})); //limit of 20mp picture, extended true means it will only accept strings
+app.use(express.urlencoded({limit: "20mb", extended: true}));
 
 app.use(cors());
 
