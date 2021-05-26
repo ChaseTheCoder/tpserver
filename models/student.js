@@ -6,6 +6,6 @@ const StudentSchema = mongoose.Schema({
   grade: String
 });
 
-const student = mongoose.model('student', StudentSchema);
+const Student = mongoose.model('student', StudentSchema);
 
-export default student;
+export default Student;
