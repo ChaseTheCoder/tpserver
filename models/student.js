@@ -8,4 +8,4 @@ const studentSchema = mongoose.Schema({
 
 const student = mongoose.model('student', studentSchema);
 
-export default student;
+export default student; // test

@@ -9,8 +9,10 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module", 
-  "devDependencies": {},
+  "type": "module",
+  "devDependencies": {
+    "jest": "^27.0.1"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
