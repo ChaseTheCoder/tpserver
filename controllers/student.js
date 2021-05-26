@@ -2,9 +2,9 @@ import StudentData from '../models/student.js';
 
 export const getStudents = async (req, res)=> {
   try {
-    const allStudents = await StudentData.find(); // finds student in allStudents variable
+    const allStudents = await StudentData.find(); // finds student in allStudents variable and waits for it
 
-    res.status(200).json(allStudents); //send back all students to client
+    res.status(200).json(allStudents); //send back all students to client in form of JSON
   } catch (error) { //if error, send response
     res.status(404).json({ message: error.message })
   }
