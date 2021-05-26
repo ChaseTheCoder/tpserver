@@ -21,3 +21,8 @@ export const createStudent = async (req, res)=> { //client sends data as request
     res.status(409).json({ message: error.message })
   }
 };
+
+module.exports = {
+  getStudents,
+  newStudent,
+};

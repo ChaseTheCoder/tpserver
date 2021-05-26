@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 
-const studentSchema = mongoose.Schema({
+const StudentSchema = mongoose.Schema({
   firstName: String,
   lastName: String,
   grade: String
 });
 
-const student = mongoose.model('student', studentSchema);
+const student = mongoose.model('student', StudentSchema);
 
-export default student; // test
+export default student;
