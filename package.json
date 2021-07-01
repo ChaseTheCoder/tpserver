@@ -14,7 +14,8 @@
     "jest": "^27.0.1"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
     "url": "https://github.com/ChaseTheCoder/tpserver/issues"
   },
   "homepage": "https://github.com/ChaseTheCoder/tpserver#readme",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "10.16.0"
+  }
 }
